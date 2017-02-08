@@ -10,7 +10,7 @@
       $path = $dir.'/'.$file;
       if (is_dir($path)) {
         echo '<li class="sg-subnav-parent">';
-        renderTitleFromPath($path, 'h2');
+        renderTitleFromPath($path, 'h5');
         listFilesInFolder($path);
         echo '</li>';
       } else {
@@ -93,7 +93,7 @@
   function renderFileExample($content) {
     if ($content != '') {
       echo '<div class="sg-sub-section sg-example">';
-      echo '<h3 class="sg-h3 sg-title">Example</h3>';
+      echo '<h6 class="dark-secondary">Example</h6>';
       echo $content;
       echo '</div>';
     }

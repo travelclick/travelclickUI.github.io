@@ -24,7 +24,7 @@ body {
 }
 
 .sg-header {
-  background: #0093E0;
+  background: #0082c7;
   color: #fff;
   padding-bottom: 0.75rem;
   padding-bottom: 12px; /* For older browsers */
@@ -37,6 +37,7 @@ body {
   padding-bottom: 32px; /* For older browsers */
   padding-bottom: 2rem;
 }
+
 
 .sg-wrapper {
   position: relative; /* Used to help sidebar height go all the way down the page */
@@ -51,7 +52,7 @@ body {
 }
 
 .sg-sidebar {
-  background: #3d4957;
+  background: #0093e0;
   color: #fff;
   padding-left: 16px; /* For older browsers */
   padding-left: 0 1rem;
@@ -98,8 +99,8 @@ body {
  Utility Classes
 ---------------------------------------------------------------------------- */
 .sg-container {
-  padding: 0 16px; /* For older browsers */
-  padding: 0 1rem;
+  padding: 0 24px; /* For older browsers */
+  padding: 0 1.5rem;
 }
 
 .sg-container:before,
@@ -286,7 +287,7 @@ body {
 }
 
 .sg-h2 {
-  border-bottom: 1px solid rgba(255,255,255,0.30);
+  border-bottom: 1px solid rgba(0,0,0,0.12);
   font-size: 24px;
   margin-bottom: .75em;
   padding-bottom: .2em;
@@ -297,14 +298,24 @@ body {
 /* Buttons
 ---------------------------------------------------------------------------- */
 .sg-btn {
-  background: #cbcbcb;
-  border: none;
-  color: #222;
-  float: left;
-  font-size: 16px; /* For older browsers */
-  font-size: 1rem;
-  padding: .3em .5em;
-  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid rgba(0,0,0,0.12);
+  white-space: nowrap;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .sg-btn--top {
@@ -373,26 +384,27 @@ body {
 .sg-section {
   margin-bottom: 32px; /* For older browsers */
   margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 /* Colors
 ---------------------------------------------------------------------------- */
-.sg-color {
-  margin-bottom: 1.5em;
+.color {
+    color: #fff; 
+    font-size: 1.2rem;
 }
+  .color__swatch {
+    padding: 15px;
+    margin: 0;
+  }
 
-.sg-color-swatch {
-  padding-top: 20%; /* Used to set height of color swatch */
-}
-
-.sg-color-name {
-  font-size: 1.2em; /* Test this with 1.1 em */
-  padding: .5em 0;
-}
-
-.sg-color-value {
-  font-size: 1.2em;  /* Test this with 1.1 em */
-}
+  .color__name {
+    text-align: left;
+  }
+  .color__value {
+    text-transform: uppercase;
+    text-align: right;
+  }
 
 @media only screen and (min-width: 375px) {
   .sg-color-grid {
@@ -505,6 +517,18 @@ body {
   opacity: 1;
   position: relative;
   width: 100%;
+}
+
+.element {
+  position: absolute;
+  left: -110px;
+  font-size: 1.2rem;
+  color: rgba(0,0,0,0.60) !important;
+  font-weight: 700;
+  text-transform: lowercase;
+  letter-spacing: 0;
+  text-align: right;
+  width: 100px;
 }
 
 /* Videos
