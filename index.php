@@ -47,12 +47,10 @@
     <div id="nav" class="sg-sidebar sidebar brand-primary" role="navigation">
       <h4 class="light-secondary">About</h4>
 
-      <div class="sidebar-nav list-group">
-        <a href="#sg-about" class="list-group-item active">
-          Getting Started
-        </a>
-        <a href="#sg-fontStacks" class="list-group-item">Fonts</a>
-      </div>
+      <ul class="sidebar-nav list-group">
+        <li><a href="#sg-about" class="list-group-item">Getting Started</a></li>
+        <li><a href="#sg-fontStacks" class="list-group-item">Fonts</a></li>
+      </ul>
 
       <?php listFilesInFolder('markup'); ?>
     </div><!--/.sg-sidebar-->
@@ -62,7 +60,7 @@
         <div class="sg-info">
           <div class="sg-about sg-section">
             <h1 id="sg-about" class="light-secondary">Getting Started</h1>
-            <p>A living style guide is a great tool to promote visual consistency, unify UX designers and front-end developers, as well as speed up development times. Add some documentation here on how to get started with your new style guide and start customizing this boilerplate to your liking.</p>
+            <p class="lead">A living style guide is a great tool to promote visual consistency, unify UX designers and front-end developers, as well as speed up development times.</p>
             <p>If you are looking for resources on style guides, check out <a href="http://styleguides.io">styleguides.io</a>. There are a ton of great articles, books, podcasts, talks, and other style guide tools!</p>
           </div><!--/.sg-about-->
 

@@ -5,12 +5,12 @@
     $files = preg_grep('/^([^.])/', scandir($dir));
     sort($files);
 
-    echo '<ul class="sg-nav-group">';
+    echo '<ul class="sidebar-nav list-group">';
     foreach ($files as $file) {
       $path = $dir.'/'.$file;
       if (is_dir($path)) {
         echo '<li class="sg-subnav-parent">';
-        renderTitleFromPath($path, 'h5');
+        renderTitleFromPath($path, 'h4');
         listFilesInFolder($path);
         echo '</li>';
       } else {
@@ -49,7 +49,7 @@
     if ($parent) {
       echo '<'.$parent.' id="sg-'.$id.'" class="sg-'.$parent.' sg-title">'.$filename.'</'.$parent.'>';
     } else {
-      echo '<a href="#sg-'.$id.'">'.$filename.'</a>';
+      echo '<a href="#sg-'.$id.'" class="list-group-item">'.$filename.'</a>';
     }
   }
 
