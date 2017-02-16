@@ -22,7 +22,7 @@ $brand-secondary:       $bluegray !default; //
 $brand-accent:       	$orange !default; //
 
 $brand-success:         $green !default;
-$brand-info:            $yellow !default;
+$brand-info:            $bluegray !default;
 $brand-warning:         $orange !default;
 $brand-danger:          $red !default;
 $brand-error:          	$red !default;
@@ -122,7 +122,7 @@ $padding-xs-vertical:       .5px !default; //.5px~
 $padding-xs-horizontal:     6px !default; //6px~
 
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
-$line-height-small:         1.44 !default;
+$line-height-small:         1.428 !default;
 
 $border-radius-base:        3px !default;
 $border-radius-large:       4px !default;
@@ -166,7 +166,7 @@ $table-border-color:            $dark-border !default;
 
 $btn-font-weight:                500 !default;
 
-$btn-default-color:              $dark !default;
+$btn-default-color:              $brand-primary !default;
 $btn-default-bg:                 transparent !default;
 $btn-default-border:             $dark-border !default;
 
@@ -178,7 +178,7 @@ $btn-success-color:              $light !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $brand-success !default;
 
-$btn-info-color:                 $dark !default;
+$btn-info-color:                 $light !default;
 $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                $brand-info !default;
 
@@ -223,7 +223,7 @@ $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             $brand-accent !default;
+$input-border-focus:             $brand-primary !default;
 
 //** Placeholder text color
 $input-color-placeholder:        $dark-secondary !default;
@@ -443,7 +443,7 @@ $navbar-inverse-toggle-border-color:        $light-border !default;
 //##
 
 //=== Shared nav styles
-$nav-link-padding:                          10px 15px !default;
+$nav-link-padding:                          5.5px 12px !default;
 $nav-link-hover-bg:                         $dark-border !default;
 
 $nav-disabled-link-color:                   $dark-muted !default;
@@ -494,7 +494,7 @@ $pagination-disabled-border:           $dark-border !default;
 
 $pager-bg:                             $pagination-bg !default;
 $pager-border:                         $pagination-border !default;
-$pager-border-radius:                  15px !default;
+$pager-border-radius:                  3rem !default;
 
 $pager-hover-bg:                       $pagination-hover-bg !default;
 

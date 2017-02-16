@@ -1,31 +1,31 @@
 <!-- Sample pattern, your site's patterns will be different -->
-<div class="alert alert-warning alert-dismissible">
+<div class="alert alert-warning alert-dismissiblefade fade in" role="alert">
   <span class="icon mif-warning"></span><strong>Warning Message!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-
-<div class="alert alert-error bg--red light alert-dismissible">
-  <span class="icon mif-warning mif-ani-slow"></span><strong>Error Message!</strong> Numquam quos fuga quam suscipit sapiente perferendis magnam.
-  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-
-<div class="alert alert-success alert-dismissible">
-  <span class="icon mif-notification"></span><strong>Success Message!</strong> Totam officiis dolorum voluptatibus maxime molestiae iste.
-  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-
-<div class="alert alert-info alert-dismissible dark">
-  <span class="dark"><span class="icon mif-info"></span><strong>Info Message!</strong> Consequatur facere deleniti cumque ducimus maiores nemo.</span>
-  <button type="button" class="close" aria-label="Close"><span aria-hidden="true" class="dark">&times;</span></button>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 </div>
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert">
-	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-	<h4><span class="icon mif-warning mif-ani-slow"></span> Oh snap! You got an error!</h4>
+  <span class="icon mif-warning mif-ani-slow"></span><strong>Error Message!</strong> Numquam quos fuga quam suscipit sapiente perferendis magnam.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="alert alert-success alert-dismissible fade in" role="alert">
+  <span class="icon mif-notification"></span><strong>Success Message!</strong> Totam officiis dolorum voluptatibus maxime molestiae iste.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="alert alert-info alert-dismissible fade in" role="alert">
+  <span class="icon mif-info"></span><strong>Info Message!</strong> Consequatur facere deleniti cumque ducimus maiores nemo.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="panel panel-default alert alert-decision alert-dismissible fade in" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	<h4>Oh snap! You got an error!</h4>
 	<p>
 		Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
 	</p>
-	<p>
-		<button type="button" class="btn btn-default"><span class="light">Take this action</span></button>&nbsp;<button type="button" class="btn btn-link"><span class="light">Or do this</span></button>
+	<p class="lead">
+		<button type="button" class="btn btn-default">Take this action</button>&nbsp;<button type="button" class="btn btn-link">Or do this</button>
 	</p>
 </div>

@@ -61,7 +61,7 @@
           <div class="sg-about sg-section">
             <h1 id="sg-about" class="light-secondary">Getting Started</h1>
             <p class="lead">A living style guide is a great tool to promote visual consistency, unify UX designers and front-end developers, as well as speed up development times.</p>
-            <p>If you are looking for resources on style guides, check out <a href="http://styleguides.io">styleguides.io</a>. There are a ton of great articles, books, podcasts, talks, and other style guide tools!</p>
+            <p> </p>
           </div><!--/.sg-about-->
 
           <!-- Manually add your fonts here. -->
@@ -74,7 +74,7 @@
               <dt>Primary Font Italic:</dt>
               <dd style='font-family: "Lato", "HelveticaNeue", Helvetica, Arial, sans-serif; font-style: italic;'>"Lato", "HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
 
-               <dt>Primary Font Light:</dt>
+              <dt>Primary Font Light:</dt>
               <dd style='font-family: "Lato", "HelveticaNeue", Helvetica, Arial, sans-serif; font-weight: 300;'>"Lato", "HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
 
               <dt>Primary Font Bold:</dt>
@@ -96,6 +96,7 @@
   <!-- <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"</script> -->
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
   <script src="js/sg-scripts.js"></script>
   <!--   <script src="js/main.js"></script> -->
 </body>

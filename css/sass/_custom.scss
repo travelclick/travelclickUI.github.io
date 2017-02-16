@@ -1,3 +1,16 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//
+// Global Styles
+// --------------------------------------------------
+
+
+//
+// Typography
+// --------------------------------------------------
 
 .lead {
   font-size: 21px;
@@ -39,7 +52,7 @@ h5, .subheading {
   line-height: 1.44;
 }
 
-h6, .caption {
+h6 {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -47,23 +60,61 @@ h6, .caption {
   line-height: 1.54;
 }
 
-h2.display--3, .display--3 {
-  font-size: 4.2rem !important;
+.caption {
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.54;
 }
 
-h1.display--4, .display--4 {
-  font-size: 5.8rem !important;
-  font-weight: 300;
-  line-height: 1;
+// h2.display--3, .display--3 {
+//   font-size: 4.2rem !important;
+//   font-weight: 400;
+//   line-height: 1;
+// }
+
+// h1.display--4, .display--4 {
+//   font-size: 5.8rem !important;
+//   font-weight: 300;
+//   line-height: 1;
+// }
+
+
+//
+// Iconography
+// --------------------------------------------------
+
+.icon {
+    line-height: inherit;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 4px;
 }
+
+.btn-icon {
+    line-height: inherit;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 -2px;
+}
+
+//
+// Global Styles Components
+// --------------------------------------------------
+
+ 
+
+//
+// Tables
+// --------------------------------------------------
+
+
+
+//
+// Buttons
+// --------------------------------------------------
 
 .btn {
-  -webkit-border-radius: 3rem;
-  -moz-border-radius: 3rem;
-  border-radius: 3rem;
- 
+  border-radius: 3rem; /* make the buttons have the "pill" shape */
 }
 
 .btn.rounded {
@@ -71,6 +122,19 @@ h1.display--4, .display--4 {
   -moz-border-radius: 3px !important;
   border-radius: 3px !important;
 }
+
+/* Button Group Overrides */
+
+ // .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) .btn.active 
+ .btn-group > .active{
+    border-radius: 3rem !important;
+    background-color: $brand-accent;
+    color: $light;
+}
+
+//
+// Forms
+// --------------------------------------------------
 
 .input-group {
   margin-bottom: 10px !important;
@@ -81,6 +145,203 @@ h1.display--4, .display--4 {
           box-shadow: none;
 }
 
+.form-control {
+  height: 32px;
+  border-radius: 3rem; //16px * 3 ~ 
+}
+
+/*==========  Checkbox  ==========*/
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    margin-left: -20px;
+    min-width: 58px;
+    min-height: 32px;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 5px;
+
+/* Hide default HTML checkbox */
+input {display:none;}
+
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $dark-border;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-radius: 3rem;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 5px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: $brand-accent;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $brand-accent;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+/*==========  Checkbox  ==========*/
+.checkbox label .toggle,
+.checkbox-inline .toggle {
+  margin-left: -20px;
+  margin-right: 5px;
+  border-radius: 3rem;
+}
+
+.toggle {
+  position: relative;
+  overflow: hidden;
+}
+.toggle input[type="checkbox"] {
+  display: none;
+}
+.toggle-group {
+  position: absolute;
+  width: 200%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: left 0.35s;
+  -webkit-transition: left 0.35s;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.toggle.off .toggle-group {
+  left: -100%;
+}
+.toggle-on {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  margin: 0;
+  border: 0;
+  border-radius: 3rem;
+}
+.toggle-off {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 3rem;
+  background-color: $dark-border !important;
+}
+.toggle-handle {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-width: 0 1px;
+  border-radius: 50%;
+  height: 80%;
+  width: 10%;
+  background: #fff;
+  overflow: hidden;
+  left: -10%;
+  top:10%;
+}
+
+.toggle.off .toggle-handle {
+    left: 10%;
+}
+
+.toggle.btn { min-width: 59px; min-height: 32px; }
+.toggle-on.btn { padding-right: 25%; }
+.toggle-off.btn { padding-left: 25%; }
+
+.toggle.btn-lg { min-width: 79px; min-height: 44px; }
+.toggle-on.btn-lg { padding-right: 30%; }
+.toggle-off.btn-lg { padding-left: 20%; }
+.toggle-handle.btn-lg { left: -12%; }
+.toggle.off .toggle-handle.btn-lg { left: 12%; }
+
+.toggle.btn-sm { min-width: 50px; min-height: 26px;}
+.toggle-on.btn-sm { padding-right: 22%; }
+.toggle-off.btn-sm { padding-left: 22%; }
+.toggle-handle.btn-sm { top: 8.5%; }
+
+.toggle.btn-xs { min-width: 32px; min-height: 20px; }
+.toggle-on.btn-xs { padding-right: 20%; }
+.toggle-off.btn-xs { padding-left: 20%; }
+.toggle-handle.btn-xs { top: -8%; left: -8%; }
+.toggle-off .toggle-handle.btn-xs { left: 8%; }
+
+// select custom chevron 
+.select {
+   position: relative;
+}
+
+.select select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+.select select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+
+.select .icon{
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: 25%;
+    color: $dark-secondary;
+}
+
+
+//
+// Dropdowns
+// --------------------------------------------------
+
+
+//
+// Grid System
+// --------------------------------------------------
+
+
+//
+// Navbar
+// --------------------------------------------------
+
 .navbar-brand {
     padding: 4px 15px;
     font-size: 18px;
@@ -88,25 +349,45 @@ h1.display--4, .display--4 {
     height: 50px;
 }
 
-.navbar-brand img{
+.navbar-brand img {
   height: 40px;
   width: 40px;
 }
 
-.active {
-  font-weight: 700 !important;
+
+//
+// Navs  (Tabs)
+// --------------------------------------------------
+
+// to make the tabs look like material design 
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { 
+  border: 0 none;
+  border-bottom: 3px solid $brand-primary;
+  background-color: transparent;
+  font-weight: 700;
+}
+// to make the tabs look like material design 
+.nav-tabs.nav-justified > li.active > a, .nav-tabs.nav-justified > li.active > a:hover, .nav-tabs.nav-justified > li.active > a:focus {
+  border: 0 none;
+  border-bottom: 3px solid $brand-primary;
+  background-color: transparent;
+  font-weight: 700;
 }
 
-.icon {
-    border-radius: 50%;
-    height: 24px;
-    width: 24px;
-    margin: 0 5px;
-    line-height: 22px;
-    text-align: center;
-    // border: 1px dotted;
-    overflow: hidden;
-}
+
+//
+// Pagination
+// --------------------------------------------------
+
+
+//
+// Alerts
+// --------------------------------------------------
+
+
+//
+// Accordion
+// --------------------------------------------------
 
 .accordion .panel-heading {
     position: relative;
@@ -118,17 +399,10 @@ h1.display--4, .display--4 {
     top: 14px;
 }
 
-.panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
-    color: inherit;
-    width: 100%;
-    display: inline-block;
-}
 
-.carousel-control [class^=mif-] {
-  top: 50%;
-  position: absolute;
-  margin-top: -1.75rem;
-}
+//
+// List group
+// --------------------------------------------------
 
 .sidebar {
 
@@ -137,10 +411,6 @@ h1.display--4, .display--4 {
     background-color: transparent;
     border-radius: 0;
     list-style: none;
-  }
-
-  .list-group-item {
-    color: $light-secondary;
   }
 
   .list-group-item:hover, .list-group-item:focus {
@@ -169,64 +439,62 @@ h1.display--4, .display--4 {
 
 }
 
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+
+
+//
+// Panels (Cards)
+// --------------------------------------------------
+
+.panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
+    color: inherit;
+    width: 100%;
+    display: inline-block;
 }
 
-/* Hide default HTML checkbox */
-.switch input {display:none;}
 
-/* The slider */
-.slider {
+//
+// Thumbnails
+// --------------------------------------------------
+
+
+//
+// Carousel (Slider)
+// --------------------------------------------------
+
+.carousel-control [class^=mif-] {
+  top: 50%;
   position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: $dark-border;
-  -webkit-transition: .2s;
-  transition: .2s;
-  border-radius: 34px;
+  margin-top: -1.75rem;
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .2s;
-  transition: .2s;
-  border-radius: 50%;
-}
 
-input:checked + .slider {
-  background-color: $brand-accent;
-}
+//
+// Helper Classes
+// --------------------------------------------------
 
-input:focus + .slider {
-  box-shadow: 0 0 1px $brand-accent;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-.form-control {
-  height: 32px;
-  border-radius: 3rem;
+.active {
+  font-weight: 700 !important;
 }
 
 
 
+//
+// Media Queries
+// --------------------------------------------------
 
+/*==========  Mobile First Method  ==========*/
 
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

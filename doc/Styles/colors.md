@@ -104,7 +104,7 @@
 			<li class="color__swatch bg--yellow">
 				<p class="color__name dark">yellow</p>
 				<span class="color__name dark">500</span>
-				<span class="color__value pull-right dark"><!-- #F8E71C -->#ffff00</span>
+				<span class="color__value pull-right dark"><!-- #F8E71C -->#F8F51C</span>
 			</li>
 			<li class="color__swatch bg--yellow yellow--100 dark">100</li>
 			<li class="color__swatch bg--yellow yellow--200 dark">200</li>
@@ -112,8 +112,8 @@
 			<li class="color__swatch bg--yellow yellow--400 dark">400</li>
 			<li class="color__swatch bg--yellow dark">500</li>
 			<li class="color__swatch bg--yellow yellow--600 dark">600</li>
-			<li class="color__swatch bg--yellow yellow--700">700</li>
-			<li class="color__swatch bg--yellow yellow--800">800</li>
+			<li class="color__swatch bg--yellow yellow--700 dark">700</li>
+			<li class="color__swatch bg--yellow yellow--800 dark">800</li>
 			<li class="color__swatch bg--yellow yellow--900">900</li>
 		</ul>
 		<ul class="color list-unstyled col-md-4">
