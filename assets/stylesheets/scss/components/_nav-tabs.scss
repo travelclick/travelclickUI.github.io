@@ -1,0 +1,18 @@
+//
+// Navs  (Tabs)
+// --------------------------------------------------
+
+// to make the tabs look like material design 
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { 
+  border: 0 none;
+  border-bottom: 3px solid $brand-primary;
+  background-color: transparent;
+  font-weight: 700;
+}
+// to make the tabs look like material design 
+.nav-tabs.nav-justified > li.active > a, .nav-tabs.nav-justified > li.active > a:hover, .nav-tabs.nav-justified > li.active > a:focus {
+  border: 0 none;
+  border-bottom: 3px solid $brand-primary;
+  background-color: transparent;
+  font-weight: 700;
+}

@@ -1,0 +1,40 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn {
+  border-radius: 3rem; /* make the buttons have the "pill" shape */
+}
+
+.btn.rounded { /* override "pill" shape for the rounded shape */
+  -webkit-border-radius: $border-radius-base;
+  -moz-border-radius: $border-radius-base;
+  border-radius: $border-radius-base;
+}
+
+/* Button Group Overrides */
+
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background: $light;
+    border-radius: 3rem;
+}
+
+ // .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) .btn.active 
+ .btn-group > .active{
+    border-radius: 3rem !important;
+    background-color: $brand-accent;
+    color: $light;
+    top: 1px;
+}
+
+.btn-default:hover, .btn-link:hover {
+    border-color: $dark-border;
+}
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+    outline-style: none ;
+    top: 1px;
+}

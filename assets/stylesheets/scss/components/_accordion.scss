@@ -1,0 +1,13 @@
+//
+// Accordion
+// --------------------------------------------------
+
+.accordion .panel-heading {
+    position: relative;
+}
+
+.accordion [class^=mif-] {
+    right: 15px;
+    position: absolute;
+    top: 14px;
+}

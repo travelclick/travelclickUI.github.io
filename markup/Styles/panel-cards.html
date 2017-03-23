@@ -30,113 +30,326 @@
   <div class="panel-footer">Panel footer</div>
 </div>
 
+<h3>Panel with heading, title and footer</h3>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+
 <h3>Panel with tables</h3>
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading">Panel heading</div>
-  <div class="panel-body">
-    <p>...</p>
+  <div class="panel-heading">
+    <h3 class="panel-title">Search Results</h3>
   </div>
-
-  <!-- Table -->
-<div class="table-responsive">
-  <table class="table table-bordered table-striped table-hover">
-  <thead>
-  <tr>
-    <th>
-      #
-    </th>
-    <th>
-      Table heading
-    </th>
-    <th>
-      Table heading
-    </th>
-    <th>
-      Table heading
-    </th>
-    <th>
-      Table heading
-    </th>
-    <th>
-      Table heading
-    </th>
-    <th>
-      Table heading
-    </th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <th scope="row">
-      1
-    </th>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      2
-    </th>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      3
-    </th>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-    <td>
-      Table cell
-    </td>
-  </tr>
-  </tbody>
-  </table>
-</div>
+  <div class="alert fade in" role="alert">
+    Your search has returned 400 records. <a href="#"><span class="icon mif-file-excel"></span>Export</a>
+  </div>
+  <!--   <div class="panel-body">
+  </div> -->
+    <!-- Table -->
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover">
+      <thead>
+      <tr class="row-filter">
+        <th>
+        </th>
+        <th>
+           Table heading
+          <div class="input-group input-group-sm">
+            <input type="text" class="form-control">
+          </div>
+        </th>
+        <th>
+           Table heading
+           <div class="input-group input-group-sm">
+            <input type="text" class="form-control">
+          </div>
+        </th>
+        <th>
+           Table heading
+           <div class="input-group input-group-sm">
+            <input type="text" class="form-control">
+          </div>
+        </th>
+        <th>
+           Table heading
+           <div class="input-group input-group-sm">
+            <input type="text" class="form-control">
+          </div>
+        </th>
+        <th>
+           Table heading
+           <div class="input-group input-group-sm">
+            <input type="text" class="form-control">
+          </div>
+        </th>
+        <th>
+           Table heading
+           <div class="input-group input-group-sm">
+            <input type="text" class="form-control">
+          </div>
+        </th>
+        <th>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">
+          <div class="radio">
+            <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+            <label for="radio1"> </label>
+          </div>
+        </th>
+        <td>
+           Table cell
+        </td>
+        <td>
+           <a href="#"> Table cell link </a>
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           <div class="dropdown dropup">
+			  <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuRow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<span class="icon mif-more-vert mif-2x"></span>
+			  </button>
+			  <ul class="dropdown-menu dropdown-menu-right">
+				<li><a href="#">Move</a></li>
+				<li><a href="#">Edit</a></li>
+				
+				<li><a href="#">Delete</a></li>
+			  </ul>
+			</div>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+         <div class="radio">
+            <input type="radio" name="optionsRadios" id="radio2" value="option2" checked>
+            <label for="radio1"> </label>
+          </div>
+        </th>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           <div class="dropdown dropup">
+			  <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuRow2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<span class="icon mif-more-vert mif-2x"></span>
+			  </button>
+			  <ul class="dropdown-menu dropdown-menu-right">
+				<li><a href="#">Move</a></li>
+				<li><a href="#">Edit</a></li>
+				
+				<li><a href="#">Delete</a></li>
+			  </ul>
+			</div> 
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+			<div class="radio">
+            	<input type="radio" name="optionsRadios" id="radio3" value="option3" checked>
+            	<label for="radio1"> </label>
+			</div>
+        </th>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           <div class="dropdown dropup">
+			  <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuRow3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<span class="icon mif-more-vert mif-2x"></span>
+			  </button>
+			  <ul class="dropdown-menu dropdown-menu-right">
+				<li><a href="#">Move</a></li>
+				<li><a href="#">Edit</a></li>
+				
+				<li><a href="#">Delete</a></li>
+			  </ul>
+			</div>
+        </td>
+      </tr>
+           <tr>
+        <th scope="row">
+          <div class="radio">
+            <input type="radio" name="optionsRadios" id="radio4" value="option4" checked>
+            <label for="radio1"> </label>
+          </div>
+        </th>
+        <td>
+           Table cell
+        </td>
+        <td>
+           <a href="#"> Table cell link </a>
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           <div class="dropdown dropup">
+			  <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuRow4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<span class="icon mif-more-vert mif-2x"></span>
+			  </button>
+			  <ul class="dropdown-menu dropdown-menu-right">
+				<li><a href="#">Move</a></li>
+				<li><a href="#">Edit</a></li>
+				
+				<li><a href="#">Delete</a></li>
+			  </ul>
+			</div>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+         <div class="radio">
+            <input type="radio" name="optionsRadios" id="radio5" value="option5" checked>
+            <label for="radio1"> </label>
+          </div>
+        </th>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           <div class="dropdown dropup">
+			  <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuRow5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<span class="icon mif-more-vert mif-2x"></span>
+			  </button>
+			  <ul class="dropdown-menu dropdown-menu-right">
+				<li><a href="#">Move</a></li>
+				<li><a href="#">Edit</a></li>
+				
+				<li><a href="#">Delete</a></li>
+			  </ul>
+			</div> 
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+			<div class="radio">
+            	<input type="radio" name="optionsRadios" id="radio6" value="option6" >
+            	<label for="radio1"> </label>
+			</div>
+        </th>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           Table cell
+        </td>
+        <td>
+           <div class="dropdown dropup">
+			  <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuRow6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<span class="icon mif-more-vert mif-2x"></span>
+			  </button>
+			  <ul class="dropdown-menu dropdown-menu-right">
+				<li><a href="#">Move</a></li>
+				<li><a href="#">Edit</a></li>
+				
+				<li><a href="#">Delete</a></li>
+			  </ul>
+			</div>
+        </td>
+      </tr>
+      </tbody>
+      </table>
+  </div>
+  <div class="panel-footer clearfix">
+    <div class="pull-left">
+    <button type="button" class="btn btn-link">Action1</button><button type="button" class="btn btn-link">Action2</button><button type="button" class="btn btn-link">Action3</button>
+    </div>
+     <div class="pull-right">
+     
+    <nav aria-label="...">
+      <ul class="pager">
+        <span class="small">Viewing 250 of 400 records</span>
+        <li><a href="#">Next</a></li>
+      </ul>
+    </nav>
+    
+    </div>
+  </div>
 </div>

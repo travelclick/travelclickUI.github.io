@@ -1,0 +1,192 @@
+//
+// Forms
+// --------------------------------------------------
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group-addon {
+    text-align: center;
+    background-color: $light;
+    border: 1px solid $dark-border;
+	color: $dark;
+}
+
+.form-control {
+   -webkit-box-shadow: none; // iOS <4.3 & Android <4.1
+          box-shadow: none;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  label {
+    min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+    cursor: pointer;
+  }
+	.radio-inline, .checkbox-inline {
+    display: inline-block;
+    margin-right: .75em;
+	margin-bottom: .5em;
+
+  }		
+}
+
+
+
+//Custom CSS Checkbox and radio button
+
+input[type="checkbox"]:not(:checked),
+input[type="checkbox"]:checked,
+input[type="radio"]:not(:checked),
+input[type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"]:not(:checked) + label,
+input[type="checkbox"]:checked + label,
+input[type="radio"]:not(:checked) + label,
+input[type="radio"]:checked + label{
+  position: relative;
+  padding-left: 1.75em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before {
+    box-sizing: border-box;
+    padding: 0;
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    // width: 1.25em; 
+    // height: 1.25em;
+    width: 22px; 
+    height: 22px; 
+    border: 1px solid rgba(0,0,0,.30); //the box
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+	border: 1px solid $brand-primary; //the box after it has been chencked 
+}
+
+input[type="radio"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before{
+   border-radius: 50%; //empty circle
+}
+
+/* checked mark aspect */
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="checkbox"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after  {
+  font-family: metro;
+  content: '\ea10'; //the checkmark 
+  // content: '\2713'; this is the html code for checkmark (fallback);
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  font-size: 1.6rem;
+  line-height: 0.8;
+  color: $link-color;
+  transition: all .2s;
+}
+
+input[type="radio"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after {
+  font-family: sans-serif;
+  // content: '\26AB'; //the circle mark
+  content: '';
+  left: 5px;
+  top: 5px;
+  width: 12px; 
+  height: 12px; 
+  background: $brand-primary;
+  border-radius: 50%;
+
+}
+
+/* checked mark aspect changes */
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+input[type="checkbox"]:checked + label:after,
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* disabled checkbox */
+input[type="checkbox"]:disabled:not(:checked) + label:before,
+input[type="checkbox"]:disabled:checked + label:before,
+input[type="radio"]:disabled:not(:checked) + label:before,
+input[type="radio"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color:$dark-muted;
+  background-color: $dark-border;
+  cursor: no-drop;
+}
+input[type="checkbox"]:disabled:checked + label:after,
+input[type="radio"]:disabled:checked + label:after {
+  color: $dark-muted;
+  cursor: no-drop;
+}
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  color: $dark-muted;
+  cursor: no-drop;
+}
+/* accessibility */
+input[type="checkbox"]:checked:focus + label:before,
+input[type="checkbox"]:not(:checked):focus + label:before,
+input[type="radio"]:checked:focus + label:before,
+input[type="radio"]:not(:checked):focus + label:before {
+  border: 1px dotted $link-color;
+}
+
+/* hover style just for feedback */
+label:hover:before {
+  border: 1px solid $link-color;
+}
+
+
+// select custom chevron 
+.select {
+   position: relative;
+}
+
+.select select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+.select select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+
+.select .icon{
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20%;
+    color: $dark-secondary;
+}

@@ -1,12 +1,1 @@
-
-$('li').each(function() {
-  var rgb = $(this).css('background-color');
-  rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-
-  function hex(x) {
-    return ("0" + parseInt(x).toString(16)).slice(-2);
-  }
-  rgb = "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-
-  $(this).append(" " + rgb);
-});
+function showToast() {    var x = document.getElementById("toast")    // Add the "show" class to DIV    x.className = "toast show";    // After 3 seconds, remove the show class from DIV    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);		}function showToastSuccess() {    var x = document.getElementById("toast-success")    // Add the "show" class to DIV    x.className = "toast show";    // After 3 seconds, remove the show class from DIV    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);		}function showToastInfo() {    var x = document.getElementById("toast-info")    // Add the "show" class to DIV    x.className = "toast show";    // After 3 seconds, remove the show class from DIV    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);		}function showToastWarning() {    var x = document.getElementById("toast-warning")    // Add the "show" class to DIV    x.className = "toast show";    // After 3 seconds, remove the show class from DIV    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);		}$("#menu-toggle").click(function(e) {        e.preventDefault();        $("#wrapper").toggleClass("toggled");    });

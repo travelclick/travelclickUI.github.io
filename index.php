@@ -5,22 +5,21 @@
 <meta charset="utf-8">
   <title>Travel Click Style Guide V1.0</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#000000">
 
   <!-- Style Guide Boilerplate Styles -->
-  <link rel="stylesheet" href="css/sg-style.css">
+  <link rel="stylesheet" href="assets/stylesheets/css/sg-style.css">
   <!--[if lt IE 9]><link rel="stylesheet" href="css/sg-style-old-ie.css"><![endif]-->
 
   <!-- https://github.com/sindresorhus/github-markdown-css -->
-  <link rel="stylesheet" href="css/github-markdown.css">
+  <link rel="stylesheet" href="assets/stylesheets/scss/vendor/github/github-markdown.css">
 
-  <link rel="stylesheet" href="css/stylesheets/metro-icons.min.css" >
-
-  <!-- Replace below stylesheet with your own stylesheet -->
-  <link rel="stylesheet" href="css/stylesheets/app.css">
+  <link rel="stylesheet" href="assets/stylesheets/css/metro-icons.min.css" >
 
   <!-- prism Syntax Highlighting Styles -->
-  <link rel="stylesheet" href="vendor/prism/prism.css">
+  <link rel="stylesheet" href="assets/stylesheets/scss/vendor/prism/prism.css">
+
+  <!-- Replace below stylesheet with your own stylesheet -->
+  <link rel="stylesheet" href="assets/stylesheets/css/main.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -90,7 +89,7 @@
     </div><!--/.sg-main-->
   </div><!--/.sg-wrapper-->
 
-  <!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
+  <!--[if gt IE 8]><!--><script src="assets/stylesheets/scss/vendor/prism/prism.js"></script><!--<![endif]-->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"</script> -->
@@ -98,7 +97,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
   <script src="js/sg-scripts.js"></script>
-  <!--   <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
 </body>
 </html>
 

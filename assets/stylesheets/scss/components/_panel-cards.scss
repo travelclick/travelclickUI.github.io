@@ -1,0 +1,30 @@
+//
+// Panels (Cards)
+// --------------------------------------------------
+
+.panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
+    color: inherit;
+    width: 100%;
+    display: inline-block;
+}
+
+.panel {
+	.alert {
+    padding: .25em 1em;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    margin-bottom: 0;
+    color: $dark-secondary;
+    box-shadow: none;
+    border-radius: 0;
+	}
+}
+
+.panel {
+	.panel-footer {
+	color: $dark-secondary;
+	}
+	.pager {
+		margin: 0;
+	}
+}
