@@ -1,387 +1,1 @@
-
-//## New Custom Colors.
-
-$blue: 					#0093E0 !default; 	//To be used for light blue color	 
-$blue-100:      		lighten($blue, 44%) !default; //  
-$blue-200:        		lighten($blue, 35%) !default; //  
-$blue-300:       		lighten($blue, 27%) !default; //  
-$blue-400:     			lighten($blue, 20%) !default; //  
-$blue-500:     			$blue !default; // #0093E0
-$blue-600:        		darken($blue, 5%) !default; //
-$blue-700:        		darken($blue, 9%) !default; //  
-$blue-800:        		darken($blue, 14%) !default; //  
-$blue-900:        		darken($blue, 20%) !default; //   	 
-
-$bluegray:				#3E4958	!default;	//To be used for blue grey color	 
-$bluegray-100:      	lighten($bluegray, 44%) !default; //  
-$bluegray-200:        	lighten($bluegray, 35%) !default; //  
-$bluegray-300:       	lighten($bluegray, 27%) !default; // 
-$bluegray-400:     		lighten($bluegray, 9%) !default; //  
-$bluegray-500:     		$bluegray !default; // #3d4957
-$bluegray-600:        	darken($bluegray, 5%) !default; //
-$bluegray-700:        	darken($bluegray, 9%) !default; //  
-$bluegray-800:        	darken($bluegray, 14%) !default; //  
-$bluegray-900:        	darken($bluegray, 20%) !default; //
-
-$orange:				#f38a00 !default; 	//To be used for orange color
-$orange-100:      		lighten($orange, 44%) !default; //  
-$orange-200:        	lighten($orange, 35%) !default; //  
-$orange-300:       		lighten($orange, 27%) !default; //  
-$orange-400:     		lighten($orange, 20%) !default; //  
-$orange-500:     		$orange !default; // #3d4957
-$orange-600:        	darken($orange, 5%) !default; //
-$orange-700:        	darken($orange, 9%) !default; //  
-$orange-800:        	darken($orange, 14%) !default; //  
-$orange-900:        	darken($orange, 20%) !default; //
-
-$gray:					#6D6E70	!default;	//To be used for grey color	 
-$gray-100:      		lighten($gray, 44%) !default; //  
-$gray-200:        		lighten($gray, 35%) !default;   //  
-$gray-300:       		lighten($gray, 27%) !default; //  
-$gray-400:     			lighten($gray, 20%) !default; // 
-$gray-500:     			$gray !default;	// 
-$gray-600:     			darken($gray, 5%) !default; //
-$gray-700:     			darken($gray, 9%) !default; // 
-$gray-800:     			darken($gray, 14%) !default; // 
-$gray-900:     			darken($gray, 20%) !default; //  
-
-$blue-yonder: 				#4d7ea8 !default; 	//To be used for blue-yonder color
-$blue-yonder-100:      		lighten($blue-yonder, 44%) !default; //  
-$blue-yonder-200:        	lighten($blue-yonder, 35%) !default;   //  
-$blue-yonder-300:       	lighten($blue-yonder, 27%) !default; //  
-$blue-yonder-400:     		lighten($blue-yonder, 20%) !default; // 
-$blue-yonder-500:     		$blue-yonder !default;	// 
-$blue-yonder-600:     		darken($blue-yonder, 5%) !default; //
-$blue-yonder-700:     		darken($blue-yonder, 9%) !default; // 
-$blue-yonder-800:     		darken($blue-yonder, 14%) !default; // 
-$blue-yonder-900:     		darken($blue-yonder, 20%) !default; //  	 
-	 
-$green:					#4CB944 !default; 	//To be used for green color
-$green-100:      		lighten($green, 44%) !default; //  
-$green-200:        		lighten($green, 35%) !default;   //  
-$green-300:       		lighten($green, 27%) !default; //  
-$green-400:     		lighten($green, 20%) !default; // 
-$green-500:     		$green !default;	// 
-$green-600:     		darken($green, 5%) !default; //
-$green-700:     		darken($green, 9%) !default; // 
-$green-800:     		darken($green, 14%) !default; // 
-$green-900:     		darken($green, 20%) !default; // 	 
-
-$yellow:				#FED766 !default; 	//To be used for yellow color
-$yellow-100:      		lighten($yellow, 44%) !default; //  
-$yellow-200:        	lighten($yellow, 35%) !default; //  
-$yellow-300:       		lighten($yellow, 27%) !default; //  
-$yellow-400:     		lighten($yellow, 20%) !default; // 
-$yellow-500:     		$yellow	!default;	// 
-$yellow-600:     		darken($yellow, 5%)  !default; //
-$yellow-700:     		darken($yellow, 9%) !default; // 
-$yellow-800:     		darken($yellow, 14%) !default; // 
-$yellow-900:     		darken($yellow, 20%) !default; // 	 
-	 
-$red:					#FE4A49  !default; 	//To be used for red color 
-$red-100:      			lighten($red, 44%) !default; //  
-$red-200:        		lighten($red, 35%) !default; //  
-$red-300:       		lighten($red, 27%) !default; //  
-$red-400:     			lighten($red, 20%) !default; // 
-$red-500:     			$red	!default;	// 
-$red-600:     			darken($red, 5%)  !default; //
-$red-700:     			darken($red, 9%) !default; // 
-$red-800:     			darken($red, 14%) !default; // 
-$red-900:     			darken($red, 20%) !default; // 
-
-$platinum:				#E6E6EA !default; 	//To be used for E6E6EA color
-$white-smoke:			#F4F4F8 !default; // 
-
-//Light text on dark backgrounds
-$light:					#fff 	!default; 	//To be used for white color
-$light:              	rgba($light, 100) !default; //Primary text
-$light-secondary:       rgba($light, 0.70) !default; //Secondary text
-$light-muted:           rgba($light, 0.50) !default; //Disabled text, hint text, and icons
-$light-border:          rgba($light, 0.12) !default; //For dividers and borders
-
-.light {
-	color: $light;
-}
- 
-//Dark text on light backgrounds
-$dark-base:				#150811 !default; //
-$dark:              	rgba($dark-base, 0.87) !default; //Primary text
-$dark-secondary:        rgba($dark-base, 0.54) !default; //Secondary text
-$dark-muted:            rgba($dark-base, 0.38) !default; //Disabled text, hint text, and icons
-$dark-border:           rgba($dark-base, 0.12) !default; //For dividers and borders
-
-.dark {
-	color: $dark;
-}
-
-.bg-blue {
-
-      background-color: $blue;
-
-	  &.blue-100 { 
-    	background-color: $blue-100;
-	  }
-	  &.blue-200 { 
-	    background-color: $blue-200;
-	  }
-	  &.blue-300 { 
-	    background-color: $blue-300;
-	  }
-	  &.blue-400 { 
-	    background-color: $blue-400;
-	  }
-	  &.blue-500 { 
-	    background-color: $blue-500;
-	  }
-	  &.blue-600 { 
-	    background-color: $blue-600;
-	  }
-	  &.blue-700 { 
-	    background-color: $blue-700;
-	  }
-	  &.blue-800 { 
-	    background-color: $blue-800;
-	  }
-	  &.blue-900 { 
-	    background-color: $blue-900;
-	}
-
-}
-
-.bg-bluegray {
-
-      background-color: $bluegray;
-
-	  &.bluegray-100 { 
-    	background-color: $bluegray-100;
-	  }
-	  &.bluegray-200 { 
-	    background-color: $bluegray-200;
-	  }
-	  &.bluegray-300 { 
-	    background-color: $bluegray-300;
-	  }
-	  &.bluegray-400 { 
-	    background-color: $bluegray-400;
-	  }
-	  &.bluegray-500 { 
-	    background-color: $bluegray-500;
-	  }
-	  &.bluegray-600 { 
-	    background-color: $bluegray-600;
-	  }
-	  &.bluegray-700 { 
-	    background-color: $bluegray-700;
-	  }
-	  &.bluegray-800 { 
-	    background-color: $bluegray-800;
-	  }
-	  &.bluegray-900 { 
-	    background-color: $bluegray-900;
-	}
-
-}
-
-.bg-orange {
-
-      background-color: $orange;
-
-	  &.orange-100 { 
-    	background-color: $orange-100;
-	  }
-	  &.orange-200 { 
-	    background-color: $orange-200;
-	  }
-	  &.orange-300 { 
-	    background-color: $orange-300;
-	  }
-	  &.orange-400 { 
-	    background-color: $orange-400;
-	  }
-	  &.orange-500 { 
-	    background-color: $orange-500;
-	  }
-	  &.orange-600 { 
-	    background-color: $orange-600;
-	  }
-	  &.orange-700 { 
-	    background-color: $orange-700;
-	  }
-	  &.orange-800 { 
-	    background-color: $orange-800;
-	  }
-	  &.orange-900 { 
-	    background-color: $orange-900;
-	}
-
-}
-
-.bg-gray {
-
-      background-color: $gray;
-
-	  &.gray-100 { 
-    	background-color: $gray-100;
-	  }
-	  &.gray-200 { 
-	    background-color: $gray-200;
-	  }
-	  &.gray-300 { 
-	    background-color: $gray-300;
-	  }
-	  &.gray-400 { 
-	    background-color: $gray-400;
-	  }
-	  &.gray-500 { 
-	    background-color: $gray-500;
-	  }
-	  &.gray-600 { 
-	    background-color: $gray-600;
-	  }
-	  &.gray-700 { 
-	    background-color: $gray-700;
-	  }
-	  &.gray-800 { 
-	    background-color: $gray-800;
-	  }
-	  &.gray-900 { 
-	    background-color: $gray-900;
-	}
-
-}
-
-.bg-blue-yonder {
-
-      background-color: $blue-yonder;
-
-	  &.blue-yonder-100 { 
-    	background-color: $blue-yonder-100;
-	  }
-	  &.blue-yonder-200 { 
-	    background-color: $blue-yonder-200;
-	  }
-	  &.blue-yonder-300 { 
-	    background-color: $blue-yonder-300;
-	  }
-	  &.blue-yonder-400 { 
-	    background-color: $blue-yonder-400;
-	  }
-	  &.blue-yonder-500 { 
-	    background-color: $blue-yonder-500;
-	  }
-	  &.blue-yonder-600 { 
-	    background-color: $blue-yonder-600;
-	  }
-	  &.blue-yonder-700 { 
-	    background-color: $blue-yonder-700;
-	  }
-	  &.blue-yonder-800 { 
-	    background-color: $blue-yonder-800;
-	  }
-	  &.blue-yonder-900 { 
-	    background-color: $blue-yonder-900;
-	}
-
-}
-
-.bg-green {
-
-      background-color: $green;
-
-	  &.green-100 { 
-    	background-color: $green-100;
-	  }
-	  &.green-200 { 
-	    background-color: $green-200;
-	  }
-	  &.green-300 { 
-	    background-color: $green-300;
-	  }
-	  &.green-400 { 
-	    background-color: $green-400;
-	  }
-	  &.green-500 { 
-	    background-color: $green-500;
-	  }
-	  &.green-600 { 
-	    background-color: $green-600;
-	  }
-	  &.green-700 { 
-	    background-color: $green-700;
-	  }
-	  &.green-800 { 
-	    background-color: $green-800;
-	  }
-	  &.green-900 { 
-	    background-color: $green-900;
-	}
-
-}
-
-.bg-yellow {
-
-      background-color: $yellow;
-
-	  &.yellow-100 { 
-    	background-color: $yellow-100;
-	  }
-	  &.yellow-200 { 
-	    background-color: $yellow-200;
-	  }
-	  &.yellow-300 { 
-	    background-color: $yellow-300;
-	  }
-	  &.yellow-400 { 
-	    background-color: $yellow-400;
-	  }
-	  &.yellow-500 { 
-	    background-color: $yellow-500;
-	  }
-	  &.yellow-600 { 
-	    background-color: $yellow-600;
-	  }
-	  &.yellow-700 { 
-	    background-color: $yellow-700;
-	  }
-	  &.yellow-800 { 
-	    background-color: $yellow-800;
-	  }
-	  &.yellow-900 { 
-	    background-color: $yellow-900;
-	}
-
-}
-
-.bg-red {
-
-      background-color: $red;
-
-	  &.red-100 { 
-    	background-color: $red-100;
-	  }
-	  &.red-200 { 
-	    background-color: $red-200;
-	  }
-	  &.red-300 { 
-	    background-color: $red-300;
-	  }
-	  &.red-400 { 
-	    background-color: $red-400;
-	  }
-	  &.red-500 { 
-	    background-color: $red-500;
-	  }
-	  &.red-600 { 
-	    background-color: $red-600;
-	  }
-	  &.red-700 { 
-	    background-color: $red-700;
-	  }
-	  &.red-800 { 
-	    background-color: $red-800;
-	  }
-	  &.red-900 { 
-	    background-color: $red-900;
-	}
-
-}
+//## New Custom Colors.$blue: 					#0093E0 !default; 	//To be used for light blue color	 $blue-100:      		lighten($blue, 44%) !default; //  $blue-200:        		lighten($blue, 35%) !default; //  $blue-300:       		lighten($blue, 27%) !default; //  $blue-400:     			lighten($blue, 20%) !default; //  $blue-500:     			$blue !default; // #0093E0$blue-600:        		darken($blue, 5%) !default; //$blue-700:        		darken($blue, 9%) !default; //  $blue-800:        		darken($blue, 14%) !default; //  $blue-900:        		darken($blue, 20%) !default; //   	 $bluegray:				#3E4958	!default;	//To be used for blue grey color	 $bluegray-100:      	lighten($bluegray, 44%) !default; //  $bluegray-200:        	lighten($bluegray, 35%) !default; //  $bluegray-300:       	lighten($bluegray, 27%) !default; // $bluegray-400:     		lighten($bluegray, 9%) !default; //  $bluegray-500:     		$bluegray !default; // #3d4957$bluegray-600:        	darken($bluegray, 5%) !default; //$bluegray-700:        	darken($bluegray, 9%) !default; //  $bluegray-800:        	darken($bluegray, 14%) !default; //  $bluegray-900:        	darken($bluegray, 20%) !default; //$orange:				#f38a00 !default; 	//To be used for orange color$orange-100:      		lighten($orange, 44%) !default; //  $orange-200:        	lighten($orange, 35%) !default; //  $orange-300:       		lighten($orange, 27%) !default; //  $orange-400:     		lighten($orange, 20%) !default; //  $orange-500:     		$orange !default; // #3d4957$orange-600:        	darken($orange, 5%) !default; //$orange-700:        	darken($orange, 9%) !default; //  $orange-800:        	darken($orange, 14%) !default; //  $orange-900:        	darken($orange, 20%) !default; //$gray:					#6D6E70	!default;	//To be used for grey color	 $gray-100:      		lighten($gray, 44%) !default; //  $gray-200:        		lighten($gray, 35%) !default;   //  $gray-300:       		lighten($gray, 27%) !default; //  $gray-400:     			lighten($gray, 20%) !default; // $gray-500:     			$gray !default;	// $gray-600:     			darken($gray, 5%) !default; //$gray-700:     			darken($gray, 9%) !default; // $gray-800:     			darken($gray, 14%) !default; // $gray-900:     			darken($gray, 20%) !default; //  $blue-yonder: 				#4d7ea8 !default; 	//To be used for blue-yonder color$blue-yonder-100:      		lighten($blue-yonder, 44%) !default; //  $blue-yonder-200:        	lighten($blue-yonder, 35%) !default;   //  $blue-yonder-300:       	lighten($blue-yonder, 27%) !default; //  $blue-yonder-400:     		lighten($blue-yonder, 20%) !default; // $blue-yonder-500:     		$blue-yonder !default;	// $blue-yonder-600:     		darken($blue-yonder, 5%) !default; //$blue-yonder-700:     		darken($blue-yonder, 9%) !default; // $blue-yonder-800:     		darken($blue-yonder, 14%) !default; // $blue-yonder-900:     		darken($blue-yonder, 20%) !default; //  	 	 $green:					#4CB944 !default; 	//To be used for green color$green-100:      		lighten($green, 44%) !default; //  $green-200:        		lighten($green, 35%) !default;   //  $green-300:       		lighten($green, 27%) !default; //  $green-400:     		lighten($green, 20%) !default; // $green-500:     		$green !default;	// $green-600:     		darken($green, 5%) !default; //$green-700:     		darken($green, 9%) !default; // $green-800:     		darken($green, 14%) !default; // $green-900:     		darken($green, 20%) !default; // 	 $yellow:				#FED766 !default; 	//To be used for yellow color$yellow-100:      		lighten($yellow, 44%) !default; //  $yellow-200:        	lighten($yellow, 35%) !default; //  $yellow-300:       		lighten($yellow, 27%) !default; //  $yellow-400:     		lighten($yellow, 20%) !default; // $yellow-500:     		$yellow	!default;	// $yellow-600:     		darken($yellow, 5%)  !default; //$yellow-700:     		darken($yellow, 9%) !default; // $yellow-800:     		darken($yellow, 14%) !default; // $yellow-900:     		darken($yellow, 20%) !default; // 	 	 $red:					#FE4A49  !default; 	//To be used for red color $red-100:      			lighten($red, 44%) !default; //  $red-200:        		lighten($red, 35%) !default; //  $red-300:       		lighten($red, 27%) !default; //  $red-400:     			lighten($red, 20%) !default; // $red-500:     			$red	!default;	// $red-600:     			darken($red, 5%)  !default; //$red-700:     			darken($red, 9%) !default; // $red-800:     			darken($red, 14%) !default; // $red-900:     			darken($red, 20%) !default; // $platinum:				#E6E6EA !default; 	//To be used for E6E6EA color$white-smoke:			#F4F4F8 !default; // //Light text on dark backgrounds$light:					#fff 	!default; 	//To be used for white color$light:              	rgba($light, 100) !default; //Primary text$light-secondary:       rgba($light, 0.70) !default; //Secondary text$light-muted:           rgba($light, 0.50) !default; //Disabled text, hint text, and icons$light-border:          rgba($light, 0.12) !default; //For dividers and borders //Dark text on light backgrounds$dark-base:				#150811 !default; //$dark:              	rgba($dark-base, 0.87) !default; //Primary text$dark-secondary:        rgba($dark-base, 0.54) !default; //Secondary text$dark-muted:            rgba($dark-base, 0.38) !default; //Disabled text, hint text, and icons$dark-border:           rgba($dark-base, 0.12) !default; //For dividers and borders.text-dark, .dark {	color: $dark;	&-secondary {	color: $dark-secondary;	}	&-muted {	color: $dark-muted;	}}.text-light, .light {	color: $light;	&-secondary {	color: $light-secondary;	}	&-muted {	color: $light-muted;	}}.bg-blue {      background-color: $blue;	  &-100 {     	background-color: $blue-100;	  }	  &-200 { 	    background-color: $blue-200;	  }	  &-300 { 	    background-color: $blue-300;	  }	  &-400 { 	    background-color: $blue-400;	  }	  &-500 { 	    background-color: $blue-500;	  }	  &-600 { 	    background-color: $blue-600;	  }	  &-700 { 	    background-color: $blue-700;	  }	  &-800 { 	    background-color: $blue-800;	  }	  &-900 { 	    background-color: $blue-900;	}}.bg-bluegray {      background-color: $bluegray;	  &-100 {     	background-color: $bluegray-100;	  }	  &-200 { 	    background-color: $bluegray-200;	  }	  &-300 { 	    background-color: $bluegray-300;	  }	  &-400 { 	    background-color: $bluegray-400;	  }	  &-500 { 	    background-color: $bluegray-500;	  }	  &-600 { 	    background-color: $bluegray-600;	  }	  &-700 { 	    background-color: $bluegray-700;	  }	  &-800 { 	    background-color: $bluegray-800;	  }	  &-900 { 	    background-color: $bluegray-900;	}}.bg-orange {      background-color: $orange;	  &-100 {     	background-color: $orange-100;	  }	  &-200 { 	    background-color: $orange-200;	  }	  &-300 { 	    background-color: $orange-300;	  }	  &-400 { 	    background-color: $orange-400;	  }	  &-500 { 	    background-color: $orange-500;	  }	  &-600 { 	    background-color: $orange-600;	  }	  &-700 { 	    background-color: $orange-700;	  }	  &-800 { 	    background-color: $orange-800;	  }	  &-900 { 	    background-color: $orange-900;	}}.bg-gray {      background-color: $gray;	  &-100 {     	background-color: $gray-100;	  }	  &-200 { 	    background-color: $gray-200;	  }	  &-300 { 	    background-color: $gray-300;	  }	  &-400 { 	    background-color: $gray-400;	  }	  &-500 { 	    background-color: $gray-500;	  }	  &-600 { 	    background-color: $gray-600;	  }	  &-700 { 	    background-color: $gray-700;	  }	  &-800 { 	    background-color: $gray-800;	  }	  &-900 { 	    background-color: $gray-900;	}}.bg-blue-yonder {      background-color: $blue-yonder;	  &-100 {     	background-color: $blue-yonder-100;	  }	  &-200 { 	    background-color: $blue-yonder-200;	  }	  &-300 { 	    background-color: $blue-yonder-300;	  }	  &-400 { 	    background-color: $blue-yonder-400;	  }	  &-500 { 	    background-color: $blue-yonder-500;	  }	  &-600 { 	    background-color: $blue-yonder-600;	  }	  &-700 { 	    background-color: $blue-yonder-700;	  }	  &-800 { 	    background-color: $blue-yonder-800;	  }	  &-900 { 	    background-color: $blue-yonder-900;	}}.bg-green {      background-color: $green;	  &-100 {     	background-color: $green-100;	  }	  &-200 { 	    background-color: $green-200;	  }	  &-300 { 	    background-color: $green-300;	  }	  &-400 { 	    background-color: $green-400;	  }	  &-500 { 	    background-color: $green-500;	  }	  &-600 { 	    background-color: $green-600;	  }	  &-700 { 	    background-color: $green-700;	  }	  &-800 { 	    background-color: $green-800;	  }	  &-900 { 	    background-color: $green-900;	}}.bg-yellow {      background-color: $yellow;	  &-100 {     	background-color: $yellow-100;	  }	  &-200 { 	    background-color: $yellow-200;	  }	  &-300 { 	    background-color: $yellow-300;	  }	  &-400 { 	    background-color: $yellow-400;	  }	  &-500 { 	    background-color: $yellow-500;	  }	  &-600 { 	    background-color: $yellow-600;	  }	  &-700 { 	    background-color: $yellow-700;	  }	  &-800 { 	    background-color: $yellow-800;	  }	  &-900 { 	    background-color: $yellow-900;	}}.bg-red {      background-color: $red;	  &-100 {     	background-color: $red-100;	  }	  &-200 { 	    background-color: $red-200;	  }	  &-300 { 	    background-color: $red-300;	  }	  &-400 { 	    background-color: $red-400;	  }	  &-500 { 	    background-color: $red-500;	  }	  &-600 { 	    background-color: $red-600;	  }	  &-700 { 	    background-color: $red-700;	  }	  &-800 { 	    background-color: $red-800;	  }	  &-900 { 	    background-color: $red-900;	}}

@@ -1,22 +1,1 @@
-//
-// Dropdown Menu
-// --------------------------------------------------
-.dropdown {
-	.btn {
-		border-radius: $border-radius-base; 
-	}
-}
-
-.dropdown-menu {
-  padding: 0;
-  margin: 2px 0 0; // override default ul
- 
-  // Links within the dropdown menu
-  > li > a {
-    padding: 6px 15px;
-	border-top: 1px solid $dark-border;
-  }
-  > li:first-child > a {
-	border-top: 1px solid transparent;
-  }
-}
+//// Dropdown Menu// --------------------------------------------------.dropdown {	.btn {		border-radius: $border-radius-base; 	}	[class*=" mif-"], [class^=mif-] {		position: relative;		top: -1px;    right: -2px;	}}.dropdown-menu {  padding: 0;  margin: 2px 0 0; // override default ul   // Links within the dropdown menu  > li > a {    padding: 6px 15px;	border-top: 1px solid $dark-border;  }  > li:first-child > a {	border-top: 1px solid transparent;  }}
